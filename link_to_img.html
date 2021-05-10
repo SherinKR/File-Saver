@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h2>JavaScript in Body</h2>
+<h2>Link to Image download</h2>
 
 <img id='image' width='200' crossorigin='anonymous' height='200' src='http://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=BEGIN:VCARD%0AVERSION:3.0%0AN:K%20R;Sherin%0AFN:Sherin%20K%20%20R%0ABDAY:2000-05-04%0ATEL;TYPE=home:7559922829%0AEMAIL;TYPE=work:sherin@efeone.com%0AEMAIL;TYPE=home:sherin.efeone@gmail.com%0AEND:VCARD'>
 <canvas id='myCanvas' width='200' height='200' style="border:1px solid black;" hidden>
@@ -22,7 +22,7 @@ download.addEventListener('click', function(e){
     var link = document.createElement('a');
     link.download = 'download.png';
     link.href = myCanvas.toDataURL();
-    //link.click();
+    link.click();
     link.delete;
 });
 </script>
